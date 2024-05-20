@@ -12,7 +12,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var name = formData.get('name');
     var email = formData.get('email');
 
-    fetch('https://script.google.com/macros/s/your-script-id/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
+    fetch('https://script.google.com/macros/s/1PfkGoZglIS8YQkZSGrC8MpqG_luVGKbvE2SQSWRKIyeL4sibEOkKLal6/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
