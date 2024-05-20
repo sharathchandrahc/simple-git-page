@@ -25,7 +25,7 @@
             var name = formData.get('name');
             var email = formData.get('email');
 
-            fetch('https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbzeHGfxDN9oNskRlbzocf0WLjo-4YEo7Gbsfsk7RSf_aYRqW554v4FwsQQENcrNg3jykw/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
+            fetch('https://corsproxy.io/?https://script.google.com/macros/s/AKfycbzeHGfxDN9oNskRlbzocf0WLjo-4YEo7Gbsfsk7RSf_aYRqW554v4FwsQQENcrNg3jykw/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
