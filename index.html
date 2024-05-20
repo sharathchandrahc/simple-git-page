@@ -25,12 +25,12 @@
             var name = formData.get('name');
             var email = formData.get('email');
 
-            fetch('https://script.google.com/macros/s/AKfycbz25RGsaTYX3V8b6itbF8mkwo28hOJ8fxFs82dHVKwWKQ1UPQho4WfE2FKNy8wy8ns0gg/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
+            fetch('https://script.google.com/macros/s/AKfycbxxgq-kqgGwqAcBHL9WgZEyLfukrCm3IrXpRk76b8PnWap1blsytyzqRtRNm4QN0jPW0Q/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
-                    return response.text();
+                    return response.json();
                 })
                 .then(data => {
                     alert('Form submitted successfully');
