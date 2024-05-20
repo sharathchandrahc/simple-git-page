@@ -25,7 +25,7 @@
             var name = formData.get('name');
             var email = formData.get('email');
 
-            fetch('https://script.google.com/macros/s/AKfycbwrBs7pA5iEbBq_mIv0CC39miDeur4CH8qXfDTPvNaxqpybHLcKJfbDtB534r9MA45d1w/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
+            fetch('https://script.google.com/macros/s/AKfycbxZpXTgd-FyWlSjUUyGxwiEbe-krGZf0tb5TIAY8YT8YP013UYLSvYWUtcD1il4uIdVPg/exec?name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email))
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
